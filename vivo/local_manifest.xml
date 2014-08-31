@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- CM replacements -->
+    <remove-project name="CyanogenMod/android_frameworks_av" />
+    <remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
+    <remove-project name="CyanogenMod/android_packages_apps_Torch" />
+  
+    <project path="frameworks/av" name="aceenablementproject/android_frameworks_av" revision="cm-11.0" />
+    <project path="kernel/htc/vivo" name="szezso/T.E.S.C.O-kernel_vivo" revision="kitkat" />
+    <project path="device/htc/vivo" name="szezso/android_device_htc_vivo" revision="cm-11.0-ION" />
+    <project path="vendor/htc/vivo" name="szezso/proprietary_vendor_vivo" revision="cm-11.0-ION" />
+    <project path="device/htc/common" name="CyanogenMod/android_device_htc_common" revision="gingerbread" />
+    <project path="hardware/qcom/display-legacy" name="szezso/android_hardware_qcom_display-legacy" remote="github" revision="kitkat" />
+    <project path="hardware/qcom/media-legacy" name="szezso/android_hardware_qcom_media-legacy" remote="github" revision="cm-11.0" />
+    <project path="hardware/qcom/audio-caf" name="szezso/android_hardware_qcom_audio-caf" remote="github" revision="cm-11.0" />
+    <project path="packages/apps/Torch" name="AceEnablementProject/android_packages_apps_Torch" revision="cm-11.0" />
+</manifest>
