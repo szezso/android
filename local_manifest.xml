@@ -2,6 +2,7 @@
 <manifest>
     <project path="kernel/htc/vivo" name="szezso/T.E.S.C.O-kernel_vivo" revision="cm-12.0" />
     <project path="device/htc/vivo" name="szezso/android_device_htc_vivo" revision="cm-12.0" />
+    <project path="device/htc/msm7x30-common" name="szezso/android_device_htc_msm7x30-common" revision="cm-12.0" />
     <project path="vendor/htc/vivo" name="szezso/proprietary_vendor_vivo" revision="cm-12.0" />
     <project path="device/htc/common" name="CyanogenMod/android_device_htc_common" revision="gingerbread" />
     <project path="hardware/qcom/display-caf/msm7x30" name="szezso/android_hardware_qcom_display-legacy" remote="github" revision="cm-12.0" />
