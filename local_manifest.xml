@@ -4,6 +4,7 @@
   <!-- remove CM repos -->
   <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />
   <remove-project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed" />
+  <remove-project name="CyanogenMod/android_bootable_recovery" />
 
   <!-- OpenDesireProject -->
   <project path="build" name="OpenDesireProject/android_build" groups="pdk,tradefed" >
@@ -18,4 +19,5 @@
     <project path="hardware/qcom/display-caf/msm7x30" name="szezso/android_hardware_qcom_display-legacy" remote="github" revision="cm-12.0" />
     <project path="hardware/qcom/media-caf/msm7x30" name="szezso/android_hardware_qcom_media-legacy" remote="github" revision="cm-12.0" />
     <project path="hardware/qcom/audio-caf/msm7x30" name="OpenDesireProject/android_hardware_qcom_audio-legacy" remote="github" revision="cm-12.0-legacy-msm7x30" />
+    <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="github" revision="android-5.0"/>
 </manifest>
