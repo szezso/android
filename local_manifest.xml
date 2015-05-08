@@ -2,21 +2,25 @@
 <manifest>
 
   <!-- remove CM repos -->
+ <remove-project name="CyanogenMod/android_bionic" />
+  <remove-project name="CyanogenMod/android_build" />
   <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />
-  <remove-project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed" />
+  <remove-project name="CyanogenMod/android_system_core" />
   <remove-project name="CyanogenMod/android_bootable_recovery" />
 
   <!-- OpenDesireProject -->
-  <project path="build" name="OpenDesireProject/android_build" groups="pdk,tradefed" >
+  <project path="bionic" name="OpenDesireProject/android_bionic" revision="cm-12.1" />
+  <project path="build" name="OpenDesireProject/android_build" revision="cm-12.1">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
     <project path="kernel/htc/vivo" name="szezso/T.E.S.C.O-kernel_vivo" revision="cm-12.0" />
-    <project path="device/htc/vivo" name="szezso/android_device_htc_vivo" revision="cm-12.0" />
-    <project path="vendor/htc/vivo" name="szezso/proprietary_vendor_vivo" revision="cm-12.0" />
+    <project path="device/htc/vivo" name="szezso/android_device_htc_vivo" revision="cm-12.1" />
+    <project path="vendor/htc/vivo" name="szezso/proprietary_vendor_vivo" revision="cm-12.1" />
     <project path="device/htc/common" name="CyanogenMod/android_device_htc_common" revision="gingerbread" />
-    <project path="hardware/qcom/display-caf/msm7x30" name="szezso/android_hardware_qcom_display-legacy" remote="github" revision="cm-12.0" />
-    <project path="hardware/qcom/media-caf/msm7x30" name="szezso/android_hardware_qcom_media-legacy" remote="github" revision="cm-12.0" />
-    <project path="hardware/qcom/audio-caf/msm7x30" name="OpenDesireProject/android_hardware_qcom_audio-legacy" remote="github" revision="cm-12.0-legacy-msm7x30" />
-    <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="github" revision="android-5.0"/>
+    <project path="hardware/qcom/display-caf/msm7x30" name="szezso/android_hardware_qcom_display-legacy" remote="github" revision="cm-12.1" />
+    <project path="hardware/qcom/media-caf/msm7x30" name="szezso/android_hardware_qcom_media-legacy" remote="github" revision="cm-12.1" />
+    <project path="hardware/qcom/audio-caf/msm7x30" name="OpenDesireProject/android_hardware_qcom_audio-legacy" remote="github" revision="cm-12.1-legacy-msm7x30" />
+    <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="github" revision="android-5.1"/>
+    <project path="system/core" name="OpenDesireProject/android_system_core" revision="cm-12.1" />
 </manifest>
